@@ -27,11 +27,9 @@ def main():
     click_timeout = 5
     while n_clicks < click_timeout:
         if gpio.input(button_ch):
-            print("Button Clicked - {}".format(n_clicks))
-            gpio.output(auto_flash_LED_ch, True)
-            time.sleep(2)
-            gpio.output(auto_flash_LED_ch, False)
+            print("Button clicked: {}".format(n_clicks))
             n_clicks += 1
+        time.sleep(0.1)
     # Teardown gpio
     gpio.cleanup()
     
