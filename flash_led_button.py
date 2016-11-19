@@ -20,7 +20,7 @@ def main():
     auto_flash_LED_ch = 12
     button_ch = 7
     # Setup channel
-    gpio.setup(button_ch, gpio.IN)
+    gpio.setup(button_ch, gpio.IN, pull_up_down=gpio.PUD_DOWN)
     gpio.setup(auto_flash_LED_ch, gpio.OUT, initial=False)
     # Main Loop
     n_clicks = 0
