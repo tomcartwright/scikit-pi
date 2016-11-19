@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="85450ca8-201f-44b3-9a43-dbf300ce9515" name="Default" comment="">
 <<<<<<< Updated upstream
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/laser_button.py" />
@@ -10,6 +11,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 >>>>>>> Stashed changes
     </list>
+=======
+    <list default="true" id="85450ca8-201f-44b3-9a43-dbf300ce9515" name="Default" comment="" />
+>>>>>>> Stashed changes
     <ignored path="scikit-pi.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />

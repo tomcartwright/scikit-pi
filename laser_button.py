@@ -23,7 +23,7 @@ def main():
     # Setup channel
     gpio.setup(button_ch, gpio.IN)
     gpio.setup(auto_flash_LED_ch, gpio.OUT, initial=False)
-    gpio.setup(laser_ch, gpio.OUT, initial=False)
+    gpio.setup(laser_ch, gpio.OUT, initial=True)
     # Main Loop
     n_clicks = 0
     n_max = 5
@@ -34,9 +34,9 @@ def main():
             n_clicks = n_clicks + 1 if not prev_state else n_clicks
             prev_state = True
             print("Button clicked {}".format(n_clicks))
-            gpio.output(laser_ch, True)
-        else:
             gpio.output(laser_ch, False)
+        else:
+            gpio.output(laser_ch, True)
             prev_state = False
         time.sleep(0.1)  # To prevent runaway CPU usage, scan on 0.1s intervals
     # Teardown gpio
